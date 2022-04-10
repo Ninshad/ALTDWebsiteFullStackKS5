@@ -1,0 +1,443 @@
+
+/*==========================================*/
+/* ---------- Table of Content  ----------- */
+/*==========================================*/
+/*
+    1 Work hero
+    2 Work content
+    3 Work screenshots cover
+    4 Work screenshot
+    5 Work Detail
+    6 Work screenshot Responsive
+    7 Work Testimonial
+*/
+/*==========================================*/
+/* 1 Work hero  */
+/*==========================================*/
+#work-hero { 
+  padding: 170px 0px 0px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1300px){
+  #work-hero {
+      padding: 120px 0 0px;
+  }
+}
+@media only screen and (max-width: 991px){
+  #work-hero {
+      padding: 80px 0 0px;
+  }
+}
+@media only screen and (max-width: 767px){
+  #work-hero {
+      padding: 70px 0 0px;
+  }
+}
+#work-hero .work-descr-wrap {
+  margin-bottom: 110px;
+}
+@media only screen and (max-width: 991px){
+  #work-hero .work-descr-wrap {
+      margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 1300px){
+  #work-hero .work-descr-wrap {
+      margin-bottom: 70px;
+  }
+}
+#work-hero .work-logo {
+  position: relative; 
+  padding: 0px 30px;
+}
+@media only screen and (max-width: 991px){
+  #work-hero .work-logo {
+      text-align: center;
+      margin-bottom: 55px;
+  }
+  #work-hero .work-logo::before {
+    display: none;
+  }
+}
+#work-hero .work-logo a {
+  width: 80%;
+  display: inline-block;
+}
+#work-hero .work-logo::before {
+  position:absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+#work-hero .work-desc {
+  padding: 0px 30px;
+}
+@media only screen and (max-width: 991px){
+  #work-hero .work-desc {
+      font-size: 34px;
+      line-height: 42px;
+      text-align: center;
+  }
+}
+#work-hero .work-desc h3 {
+  text-transform: uppercase;
+  color:#E86124;
+  margin-bottom: 10px;
+}
+#work-hero .work-desc h2 {
+  font-size: 28px;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 991px){
+  #work-hero .work-desc h2 {
+    font-size: 18px;
+  }
+}
+.work-detail-images:last-child {
+  margin-bottom: 0px;
+}
+.work-detail-images {
+  max-height: unset;
+  margin-bottom: 110px;
+}
+
+@media only screen and (max-width: 1300px){
+  .work-detail-images {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 991px){
+  .work-detail-images {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .work-detail-images {
+    margin-bottom: 50px;
+  }
+}
+#work-hero .work-detail-images img {
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  -webkit-box-shadow: 0 0 40px 0 rgb(23 23 23 / 10%);
+  box-shadow: 0 0 40px 0 rgb(23 23 23 / 10%);
+}
+.work-detail-images img {
+  height: auto;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 40px 0 rgb(23 23 23 / 10%);
+  box-shadow: 0 0 40px 0 rgb(23 23 23 / 10%);
+}
+
+
+/*==========================================*/
+/* 2 Work screenshots cover  */
+/*==========================================*/
+#work-content {
+  padding: 170px 0px;
+}
+@media only screen and (max-width: 1300px){
+  #work-content {
+      padding: 120px 0;
+  }
+}
+@media only screen and (max-width: 991px){
+  #work-content {
+      padding: 80px 0;
+  }
+}
+@media only screen and (max-width: 767px){
+  #work-content {
+      padding: 70px 0;
+  }
+}
+#work-content .work-title-detail {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 1300px){
+  #work-content .work-title-detail {
+      margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 991px){
+  #work-content .work-title-detail {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 767px){
+  #work-content .work-title-detail {
+    margin-bottom: 35px;
+  }
+}
+#work-content h3 {
+  text-transform: uppercase;
+  color:#E86124;
+  margin-bottom: 2px;
+}
+#work-content h2 {
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+#work-content .work-content-wrap h4 {
+  font-size: 26px;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px){
+  #work-content .work-content-wrap h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+}
+#work-content .work-content-wrap p {
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 767px){
+  #work-content .work-content-wrap p {
+    font-size: 14px;
+  }
+}
+/*==========================================*/
+/* 3 Work screenshots cover  */
+/*==========================================*/
+.section-parallax-block {
+  padding: 170px 0px;
+  min-height: 730px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1300px){
+  .section-parallax-block {
+      padding: 120px 0;
+      min-height: 680px;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .section-parallax-block {
+      min-height: 550px;
+      padding: 60px;
+  }
+}
+@media only screen and (max-width: 991px){
+  .section-parallax-block {
+      padding: 50px;
+  }
+}
+@media only screen and (max-width: 767px){
+  .section-parallax-block {
+      padding: 70px 0;
+  }
+}
+.background-hero-post {
+  background-image: url('../images/Works-detail/Work-image/cover-2.jpg');
+  background-position: 0% 32.5px;
+}
+.parallax {
+  padding: 150px;
+  position: relative!important;
+  background-size: cover!important;
+  overflow: hidden;
+  background-attachment: fixed!important;
+}
+@media only screen and (max-width: 1300px){
+  .parallax {
+      padding: 75px;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .parallax {
+      background-attachment: inherit!important;
+      background-position: center!important;
+  }
+}
+@media only screen and (max-width: 767px){
+  .parallax {
+      min-height: 0;
+      padding: 70% 0 0;
+      background-position: top center!important;
+      background-repeat: no-repeat!important;
+      background-size: 135%!important;
+  }
+}
+/*==========================================*/
+/* 4 Work screenshot  */
+/*==========================================*/
+.work-scrn-shot {
+  padding: 170px 0px;
+  background-color: #f7f7f7;
+}
+
+@media only screen and (max-width: 1300px){
+  .work-scrn-shot {
+      padding: 120px 0;
+  }
+}
+@media only screen and (max-width: 991px){
+  .work-scrn-shot {
+      padding: 80px 0;
+  }
+}
+@media only screen and (max-width: 767px){
+  .work-scrn-shot {
+      padding: 70px 0;
+  }
+}
+/*==========================================*/
+/* 5 Work Detail  */
+/*==========================================*/
+#work-detail {
+  padding: 170px 0px;
+}
+@media only screen and (max-width: 1300px){
+  #work-detail {
+      padding: 120px 0;
+  }
+}
+@media only screen and (max-width: 991px){
+  #work-detail {
+      padding: 80px 0;
+  }
+}
+@media only screen and (max-width: 767px){
+  #work-detail {
+      padding: 70px 0;
+  }
+}
+#work-detail .detail-content {
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 1300px){
+  #work-detail .detail-content {
+    margin-bottom: 60px;
+  }
+}
+@media only screen and (max-width: 1100px){
+  #work-detail .detail-content {
+    margin-bottom: 40px;
+  }
+}
+#work-detail .detail-content:last-child {
+  margin-bottom: 0;
+}
+#work-detail h2 {
+  margin-bottom: 130px;
+}
+@media only screen and (max-width: 1300px){
+  #work-detail h2 {
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 991px){
+  #work-detail h2 {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 767px){
+  #work-detail h2 {
+    margin-bottom: 30px;
+  }
+}
+#work-detail .h-3 {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #E86124;
+  letter-spacing: 0;
+}
+
+@media only screen and (max-width: 1300px){
+  #work-detail .h-3 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1100px){
+  #work-detail .h-3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+/*==========================================*/
+/* 6 Work screenshot Responsive  */
+/*==========================================*/
+.work-scrn-shot-mobile {
+  padding: 170px 0px 60px;
+  background-color: #f7f7f7;
+}
+
+/*==========================================*/
+/* 7 Work Testimonial  */
+/*==========================================*/
+#work-testimonial {
+  padding: 170px 0px;
+}
+@media only screen and (max-width: 1300px){
+  #work-testimonial {
+      padding: 120px 0;
+  }
+}
+@media only screen and (max-width: 991px){
+  #work-testimonial {
+      padding: 80px 0;
+  }
+}
+@media only screen and (max-width: 767px){
+  #work-testimonial {
+      padding: 70px 0;
+  }
+}
+#work-testimonial .testimonial-icon {
+  background-color: #1f1f1f;
+  background-image: url('../svg/quote/quote_icon.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 36px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  font-size: 30px;
+  color: #E86124;
+  margin-bottom: 50px;
+}
+#work-testimonial .content-text p {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+#work-testimonial .author-text {
+  font-size: 13px;
+  color: #1f1f1f;
+  font-weight: 400;
+}
+#work-testimonial .author-text:after, 
+#work-testimonial .author-text:before {
+  content: "";
+  margin: -5px 20px 0;
+  width: 12px;
+  height: 1px;
+  background-color: #bbb;
+  display: inline-block;
+  vertical-align: middle;
+}

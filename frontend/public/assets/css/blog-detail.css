@@ -1,0 +1,175 @@
+
+/*==========================================*/
+/* ---------- Table of Content  ----------- */
+/*==========================================*/
+/*
+    1 Blog Detail Page banner
+    2 Blog Detail Page image
+    3 Blog Detail Content
+    4 Blog Author Bio Tooltip Plugin
+*/
+/*==========================================*/
+/* 1 Blog Detail Page banner  */
+/*==========================================*/
+#blog-detail-banner {
+  padding: 200px 0px;
+}
+#blog-detail-banner h1{
+  margin-bottom: 10px;
+}
+
+/*==========================================*/
+/* 2 Blog Detail Page image */
+/*==========================================*/
+.background-hero-post-blog {
+  background-image: url('../images/Blog-listing/blog-list-img-1.jpg');
+  background-position: 0% 32.5px;
+  min-height: 730px;
+}
+.parallax {
+  padding: 150px;
+  position: relative!important;
+  background-size: cover!important;
+  overflow: hidden;
+  background-attachment: fixed!important;
+}
+/*==========================================*/
+/* 3 Blog Detail Content */
+/*==========================================*/
+#blog-detail-light,#blog-detail {
+  padding: 100px 0px;
+}
+
+#blog-detail-light .detail-content p {
+  padding-bottom: 25px;
+  font-size: 16px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+}
+#blog-detail-light .detail-content ol {
+  list-style: decimal;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#blog-detail-light .detail-content ol>li {
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.7em;
+  letter-spacing: 0.5px;
+}
+#blog-detail.bg-grey {
+  background-color: #f7f7f7;
+}
+#blog-detail .detail-content ol.content-block>li {
+  font-size: 30px;
+  line-height: 1.7em;
+  letter-spacing: 0.5px;
+}
+#blog-detail .detail-content ol.content-block>li>h4 {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 30px;
+}
+#blog-detail .detail-content ol.content-block>h4 {
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 30px;
+}
+@media only screen and (max-width: 568px){
+  #blog-detail .detail-content ol.content-block>li {
+    font-size: 22px;
+    margin-left: 25px;
+  }
+  #blog-detail .detail-content ol.content-block>li>h4,
+  #blog-detail .detail-content ol.content-block>h4 {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 22px;
+  }
+}
+#blog-detail .detail-content ol.content-block p {
+  font-size: 16px;line-height: 2em;
+  letter-spacing: 0.5px;
+}
+#blog-detail .detail-content ol.content-block img {
+  margin: 30px 0px 50px;
+  box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.146);
+}
+#blog-detail .detail-content ol.content-block ul {
+  list-style: disc;
+}
+#blog-detail .detail-content ol.content-block ul>li {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 30px;
+  line-height: 1.7em;
+  padding-bottom: 15px;
+}
+
+/*==========================================*/
+/* 4 Blog Author Bio Tooltip Plugin  */
+/*==========================================*/
+
+#blog-detail-banner .blog-by-on p {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  color: #9d9d9d;
+}
+#blog-detail-banner .blog-by-on p span {
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+#blog-detail-banner .blog-by-on h3 {
+  letter-spacing: 0.5px;
+}
+
+.tooltip {
+  cursor: pointer;
+}
+.author-bio {
+  max-width: 250px;
+}
+.author-bio .author-pic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #000;
+}
+.author-bio .author-name {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  color: #000;
+  padding: 0px 20px;
+}
+.author-bio .author-des {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  color: #616161;
+  padding: 0px 20px;
+}
+.author-bio ul {
+  margin-top: 10px;
+}
+.author-bio ul li {
+  font-size: 12px;
+  display: inline-block;
+}
+.author-bio ul li a {
+  padding: 0px 10px;
+}
+.author-bio ul li a:first-child {
+  padding: 0px;
+  padding-right: 10px;
+}

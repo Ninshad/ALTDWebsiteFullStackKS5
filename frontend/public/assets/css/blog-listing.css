@@ -1,0 +1,406 @@
+
+/*==========================================*/
+/* ---------- Table of Content  ----------- */
+/*==========================================*/
+/*
+    1 Blog banner
+    2 Blog listing
+    2 Blog Author Bio Tooltip Plugin
+*/
+/*==========================================*/
+/* 1 Blog banner */
+/*==========================================*/
+#blog-banner {
+  padding: 140px 0px 80px;
+  background: url('../images/Blog-listing/banner.jpg') top center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#blog-banner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffd0;
+}
+
+#blog-banner .post-main-wrap {
+  height: 100%;
+}
+#blog-banner .post-main-wrap .post-wrapper {
+  padding: 0 20px 60px;
+  height: 100%;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap {
+  background-color: #1f1f1f;
+  padding: 40px 35px;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #fff;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap h3 {
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+  color: #fff;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap:hover h3 {
+  color: #E86124;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+/* h2 hover style */
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap:hover h2 {
+  color: #E86124;
+}
+
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap .post-by-on {
+  margin-bottom: 15px;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap .post-by-on p {
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+  color: #dadada;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap .post-by-on p span {
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #dadada;
+  text-decoration: underline;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap p {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap .post-time:before {
+  width: 20px;
+  height: 1px;
+  background-color: #ffffff;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap .post-time {
+  font-size: 10px;
+  letter-spacing: .5px;
+  position: relative;
+  padding-left: 35px;
+  line-height: 22px;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap .post-time .post-wrap-time {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap .post-time .post-read-more {
+  color: #fff;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+  top: 0;
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap:hover .post-time .post-wrap-time {
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+#blog-banner .post-main-wrap .post-wrapper .post-detail-wrap:hover .post-time .post-read-more {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  top: 1px;
+}
+/*==========================================*/
+/* 2 Blog listing */
+/*==========================================*/
+#blog-listing {
+  padding: 170px 0px 50px;
+}
+#blog-listing .blog-catgories {
+  position: relative;
+  margin-bottom: 40px;
+}
+#blog-listing .blog-catgories::after {
+  position: absolute;
+  height: 1px;
+  width: calc(100% - 60px);
+  background-color: #00000062;
+  bottom: 0px;
+  left: 30px;
+  right: 0;
+  content: '';
+}
+#blog-listing .blog-catgories button {
+  display: inline-block;
+  padding: 10px 15px;
+  list-style: none;
+  margin: 0;
+  cursor: pointer;
+  color: #000;
+  background-color: white;
+  border: none;
+}
+#blog-listing .blog-catgories button:hover,
+#blog-listing .blog-catgories button.active {
+  background-color: white;
+  color: #E86124;
+  border: none;
+}
+
+
+#blog-listing .blog-list-item {
+  padding: 0 30px;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1300px){
+  #blog-listing .blog-list-item {
+      padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px){
+  #blog-listing .blog-list-item {
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+  }
+}
+#blog-listing .blog-thumb {
+  overflow: hidden;
+}
+#blog-listing .blog-list-item .blog-thumb a.blog-img {
+  display: inline-block;
+  width: calc(100% + 50px);
+  margin-bottom: 5px;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+  -webkit-transition: opacity .35s,-webkit-transform .35s;
+  transition: opacity .35s,-webkit-transform .35s;
+  transition: opacity .35s,transform .35s;
+  transition: opacity .35s,transform .35s,-webkit-transform .35s;
+}
+#blog-listing .blog-list-item:hover .blog-thumb a.blog-img {
+  width: calc(100% + 0);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+#blog-listing .blog-thumb a.blog-img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+#blog-listing .blog-thumb h3 {
+  color: #E86124;
+  text-transform: uppercase;
+  padding: 4px 15px;
+}
+
+
+
+#blog-listing .blog-content {
+  padding: 0px 15px 30px;
+}
+#blog-listing .blog-content h2 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 1px;
+
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 3.1em; /* Fallback for non-webkit, line-height * 2 */
+  -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2;  /* if you change this, make sure to change the fallback line-height and height */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#blog-listing .blog-content .blog-by-on p {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  color: #9d9d9d;
+}
+#blog-listing .blog-content .blog-by-on p span {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+  color: #000000;
+  text-decoration: underline;
+}
+#blog-listing .blog-content .blogText {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: 5em; /* Fallback for non-webkit, line-height * 2 */
+  -webkit-line-clamp: 3; /* number of lines to show */
+           line-clamp: 3;  /* if you change this, make sure to change the fallback line-height and height */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#blog-listing .blog-content .blog-time {
+  font-size: 12px;
+  position: relative;
+  padding-left: 60px;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+#blog-listing .blog-content .blog-time:before {
+  width: 40px;
+  height: 1px;
+  background-color: #c5c5c5;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+#blog-listing .blog-content .blog-time .blog-wrap-time {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+#blog-listing .blog-content .blog-time .blog-read-more {
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: .5s;
+  transition: .5s;
+  position: absolute;
+  top: 0;
+  color: #E86124;
+}
+#blog-listing .blog-list-item:hover .blog-time .blog-wrap-time {
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+#blog-listing .blog-list-item:hover .blog-time .blog-read-more {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  top: 1px;
+}
+#blog-listing .hidden{
+  visibility:hidden;
+  width:0px!important;
+  height:0px!important;
+  margin:0px!important;
+  padding:0px!important;
+}
+#blog-listing .viewPlan a {
+  cursor: pointer;
+  text-align: center;
+  padding: 16px 32px 17px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: #1f1f1f;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+#blog-listing .viewPlan a:hover {
+  color: #1f1f1f;
+  background: rgba(31,31,31,.08);
+}
+
+
+
+/* BlogloadMoreButton */
+
+.BlogloadMoreButton{
+  display: flex;
+  justify-content: center;
+}
+
+
+.BlogloadMoreButton button{
+  cursor: pointer;
+  text-align: center;
+  padding: 16px 32px 17px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: #1f1f1f;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: none;
+  
+}
+.BlogloadMoreButton button:hover {
+  color: #1f1f1f;
+  background: rgba(31,31,31,.08);
+}
+
+/*==========================================*/
+/* 3 Blog Author Bio Tooltip Plugin  */
+/*==========================================*/
+
+
+.tooltip {
+  cursor: pointer;
+}
+.author-bio {
+  max-width: 250px;
+}
+.author-bio .author-pic {
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-color: #000;
+}
+.author-bio .author-name {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  color: #000;
+  padding: 0px 20px;
+}
+.author-bio .author-des {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  color: #616161;
+  padding: 0px 20px;
+}
+.author-bio ul {
+  margin-top: 10px;
+}
+.author-bio ul li {
+  font-size: 12px;
+  display: inline-block;
+}
+.author-bio ul li a {
+  padding: 0px 10px;
+}
+.author-bio ul li a:first-child {
+  padding: 0px;
+  padding-right: 10px;
+}

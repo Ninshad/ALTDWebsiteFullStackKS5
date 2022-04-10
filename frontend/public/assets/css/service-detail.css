@@ -1,0 +1,177 @@
+
+/*==========================================*/
+/* ---------- Table of Content  ----------- */
+/*==========================================*/
+/*
+    1 Service Detail Hero
+    2 About Service
+    3 Service Cover
+    4 Service Cover 2
+    5 Service Details
+*/
+/*==========================================*/
+/* 1 Service Detail Hero */
+/*==========================================*/
+#services-item {
+  padding: 140px 0px 0px;
+}
+#services-item h3 {
+  text-transform: uppercase;
+}
+#services-item:last-of-type {
+  padding: 140px 0px;
+}
+
+/*==========================================*/
+/* 1 service commen img animation */
+/*==========================================*/
+.st0-2{fill:#E4E4E4;}
+.leaf_sub_2{fill:#FFFFFF;}
+.leaf_2{fill:#F0F0F0;}
+.st1-2{fill:#F0F0F0;}
+.st3-2{fill:#E6E6E6;}
+.st4-2{fill:#E86124;}
+.st5-2{fill:#F2F2F2;}
+.st6-2{fill:#9E616A;}
+.st7-2{fill:#2F2E41;}
+.st8-2{fill:#3F3D56;}
+.st9-2{fill:#CCCCCC;}
+
+#service-cover-2 .bg_img {
+    width: 900px;
+    text-align: center;
+    animation: activeMove 0.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes activeMove {
+    0% {
+        transform: translateY(0px);
+    }
+  
+    100% {
+        transform: translateY(1px);
+    }
+  }
+
+@media only screen and (max-width: 560px){
+  #services-item {
+    padding: 70px 0px 0px;
+  }
+  #services-item:last-of-type {
+    padding: 70px 0px;
+  }
+}
+#services-item img {
+  padding: 50px 0px;
+
+  margin-top: -12px;
+}
+@media only screen and (max-width: 560px){
+  #services-item img {
+    max-width: 26em;
+  }
+}
+#services-item .item-wrap h1 {
+  padding-bottom: 15px;
+
+  margin-top: -8px;
+}
+#services-item .item-wrap p {
+  max-width: 90%;
+}
+/*==========================================*/
+/* 2 About Service */
+/*==========================================*/
+#about-service {
+  padding: 170px 0px;
+  background-color: #000;
+  color: #fff;
+}
+@media only screen and (max-width: 560px){
+  #about-service {
+    padding: 70px 0px;
+  }
+}
+#about-service h2 {
+  margin: 0px 0px 30px;
+}
+#about-service p {
+  margin: 0px 0px 30px;
+  font-size: 19px;
+  letter-spacing: .2px;
+  line-height: 1.7;
+}
+/*==========================================*/
+/* 3 Service Cover */
+/*==========================================*/
+#service-cover {
+  background-color: #f7f7f7;
+  padding: 170px 0px 70px;
+}
+
+@media only screen and (max-width: 768px){
+  #service-cover {
+    padding: 70px 0px ;
+  }
+}
+@media only screen and (max-width: 992px){
+  #service-cover h2{
+    margin-bottom: 30px;
+  }
+}
+/*==========================================*/
+/* 4 Service Cover 2 */
+/*==========================================*/
+/* url('../svg/service-detail/code-img.svg') bottom center no-repeat, */
+#service-cover-2{
+  background: #f7f7f7;
+  background-size: contain;
+  min-height: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1100px){
+  #service-cover-2{
+    min-height: 50vw;
+    background-size: 100%;
+  }
+
+  #service-cover-2 .bg_img {
+    max-width: 100%;
+  }
+}
+
+/*==========================================*/
+/* 5 Service Details */
+/*==========================================*/
+#service-detail {
+  padding: 170px 0px 100px;
+}
+#service-detail h2 {
+  padding-bottom: 100px;
+}
+#service-detail .card-item {
+  padding-bottom: 60px;
+}
+#service-detail .card-item .card-icon {
+  padding: 0px 0px 10px;
+}
+#service-detail .card-item .service-title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #1f1f1f;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+}
+#service-detail .card-item .service-content-text {
+  margin: 0px 0px 30px;
+  font-size: 19px;
+  letter-spacing: .2px;
+  line-height: 1.7;
+  color: grey;
+}
+
+
+
